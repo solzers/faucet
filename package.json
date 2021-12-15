@@ -1,0 +1,18 @@
+{
+    "dependencies": {
+        "@project-serum/anchor": "^0.18.2",
+        "@solana/spl-token": "^0.1.8",
+        "@types/jest": "^27.0.3",
+        "@types/node": "^16.11.10",
+        "@types/react": "^17.0.37",
+        "@types/react-dom": "^17.0.11",
+        "react-hot-toast": "^2.1.1"
+    },
+    "devDependencies": {
+        "@types/mocha": "^9.0.0",
+        "chai": "^4.3.4",
+        "mocha": "^9.0.3",
+        "ts-mocha": "^8.0.0",
+        "typescript": "^4.5.2"
+    }
+}

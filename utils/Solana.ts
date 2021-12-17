@@ -9,7 +9,7 @@ export const PROGRAM_ID = new anchor.web3.PublicKey(
 
 // Token mint address.
 export const TOKEN_MINT = new anchor.web3.PublicKey(
-  "CFTrP9XmWcBxii55aGE5X99CyVjjoXFcJ1tHRENX2nQG"
+  "3y8jg6u8LJiv4UQKJ8qUXEVwsM1xbYJvsJ4VupZbreb8"
 );
 
 // Convert 'value' to a typescript 'number.

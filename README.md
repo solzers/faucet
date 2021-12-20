@@ -65,3 +65,40 @@
   
 ### Create IDL Account (this writes the .json file into a program owned account)
   - anchor idl init -f <target/idl/solzers_faucet.json> <program_id>
+
+
+# Deployment
+# --------------------------------------------------------------------------------------------------
+
+1. Set Solana Config Cluster.
+    - `solana config set --url <devnet | testnet | mainnet>`
+
+2. Set Keypair File Path.
+    - `solana config set --keypair <$HOME/.config/solana/FILE_NAME.json>`
+
+3. Credit Account With SOL (6+ to be sure).
+    - `solana airdrop 6 - OR - transaction to wallet address`
+
+4. Update `Anchor.toml` file.
+    - `'solzers_faucet'`, `'cluster'` and `'wallet'`
+
+5. Build Program.
+    - `anchor build`
+
+6. Deploy Program.
+    - `anchor deploy`
+
+7. Update `.env` file (restart app after changing .env file).
+    - `REACT_APP_SOLANA_NETWORK`
+    - `REACT_APP_SOLANA_RPC_HOST`
+    - `REACT_APP_FAUCET_TOKEN_MINT`
+
+8. Update `server` env variables.
+    - `REACT_APP_*`
+
+9. Store IDL file on-chain.
+    - `anchor idl init -f <target/idl/solzers_faucet.json> <program_id>`
+
+10. Configure faucet account.
+    - `Create faucet account`
+    - `Configure faucet (Update/Deposit)`

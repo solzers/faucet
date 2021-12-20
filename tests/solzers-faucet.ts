@@ -283,7 +283,7 @@ describe('faucet', () => {
     console.log("PAYER'S TOKEN ACCOUNT BALANCE:     (BEFORE)", payerBalance?.toString());
     console.log("FAUCET'S TOKEN ACCOUNT BALANCE:    (BEFORE)", faucetBalance.toString());
 
-    // Send `faucetInfo.amount` token to the payer's token account.
+    // Send `faucetInfo.amount` * `quantity` tokens to the payer's token account.
     await program.rpc.payout(quantity, transactionBump, {
       accounts: {
         faucet: faucet.publicKey,

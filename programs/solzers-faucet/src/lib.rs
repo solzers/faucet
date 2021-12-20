@@ -510,6 +510,6 @@ pub enum ErrorCode {
   MinQuantity,
   #[msg("Maximum quantity exceeded.")]
   MaxQuantity,
-  #[msg("The payout limit has been reached.")]
+  #[msg("You've reached the faucet's payout limit, please try again later.")]
   PayoutLimit,
 }
